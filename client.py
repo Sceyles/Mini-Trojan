@@ -2,10 +2,8 @@ import socket
 import zipfile
 import os
 import subprocess
-import time
 
 def receive_file():
-    time.sleep(5)
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client_socket.connect(("Server IP address", 8000))   
     with open('received_files.zip', 'wb') as file:
